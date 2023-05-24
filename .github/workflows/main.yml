@@ -112,6 +112,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
+          haxelib install node.js
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null
           haxelib install lime
